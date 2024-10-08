@@ -223,12 +223,18 @@ body{
     font-size: 1rem;
     font-weight: 700;
 }
-.post .card{
-    border: white;
-    width: 250px;
- margin-left: 70px;
- 
+.post .card {
+    border: 2px solid white; /* Set a solid border */
+    width: 250px; /* Fixed width */
+    margin-left: 70px; /* Left margin */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for effects */
 }
+
+.post .card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Add shadow effect on hover */
+}
+
 
 /* testimonial section starts */
 .testimonial img:hover{
